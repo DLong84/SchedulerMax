@@ -1,0 +1,5 @@
+User: "test" log-in was successful at 2023-06-15 18:20:01UTC
+User: "admin" attempted unsuccessful log-in at 2023-06-15 18:20:19UTC
+User: "admin" log-in was successful at 2023-06-15 18:20:29UTC
+User: "test" attempted unsuccessful log-in at 2023-06-15 18:56:08UTC
+User: "test" log-in was successful at 2023-06-15 18:56:16UTC

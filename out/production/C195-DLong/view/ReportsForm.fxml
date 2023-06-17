@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <AnchorPane layoutX="308.0" prefHeight="61.0" prefWidth="407.0">
+         <children>
+            <Label layoutX="137.0" layoutY="11.0" text="Reports" underline="true">
+               <font>
+                  <Font name="Arial Black" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="198.0" layoutY="45.0" text="Appointment Count">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="apptCountTable" layoutX="53.0" layoutY="71.0" prefHeight="294.0" prefWidth="417.0">
+        <columns>
+          <TableColumn fx:id="apptCntMonthCol" prefWidth="136.0" text="Appt Month" />
+          <TableColumn fx:id="apptCntTypeCol" prefWidth="168.0" text="Appt Type" />
+            <TableColumn fx:id="apptCountCol" prefWidth="112.0" text="Count" />
+        </columns>
+      </TableView>
+      <Separator layoutX="509.0" layoutY="118.0" orientation="VERTICAL" prefHeight="200.0" />
+      <TableView fx:id="custLocTable" layoutX="566.0" layoutY="71.0" prefHeight="294.0" prefWidth="417.0">
+         <columns>
+            <TableColumn fx:id="custNameCol" prefWidth="144.0" text="Customer Name" />
+            <TableColumn fx:id="custCountryCol" prefWidth="99.0" text="Country" />
+            <TableColumn fx:id="custStateProvCol" prefWidth="173.0" text="State/Province" />
+         </columns>
+      </TableView>
+      <Separator layoutX="-3.0" layoutY="376.0" prefHeight="0.0" prefWidth="1034.0" />
+      <Label layoutX="27.0" layoutY="390.0" text="Contact Schedule">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#ebebeb" height="172.0" layoutX="10.0" layoutY="418.0" stroke="#a8a8a8" strokeType="INSIDE" width="150.0" />
+      <ComboBox fx:id="rprtContactComboBox" layoutX="10.0" layoutY="417.0" onAction="#onActionContactSelect" prefWidth="150.0" promptText="Select a contact" visibleRowCount="5" />
+      <TableView fx:id="contactApptTable" layoutX="158.0" layoutY="390.0" prefHeight="200.0" prefWidth="815.0">
+        <columns>
+          <TableColumn fx:id="apptIdCol" prefWidth="41.0" text="ID" />
+          <TableColumn fx:id="apptTitleCol" prefWidth="125.0" text="Title" />
+            <TableColumn fx:id="apptDescripCol" prefWidth="127.0" text="Description" />
+            <TableColumn fx:id="contactApptTypeCol" prefWidth="150.0" text="Type" />
+            <TableColumn fx:id="apptStartDTCol" prefWidth="151.0" text="Start Date/Time" />
+            <TableColumn fx:id="apptEndDTCol" prefWidth="140.0" text="End Date/Time" />
+            <TableColumn fx:id="apptCustIdCol" text="Customer ID" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="808.0" layoutY="599.0" prefHeight="61.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="rptsBackBtn" layoutX="74.0" layoutY="8.0" mnemonicParsing="false" onAction="#onActionGoBack" prefHeight="40.0" prefWidth="69.0" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="717.0" layoutY="45.0" text="Customer Location">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
