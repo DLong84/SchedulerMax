@@ -19,7 +19,7 @@ Features:
 
 -A "reports" button that displays three different tables:
 	1. The number of appointments by month and appointment type
-	2. The appointments schedule of all contacts, specifically selected one 	at a time
+	2. The appointments schedule of all contacts, specifically selected one at a time
 	3. The location information of all customers
 
 
