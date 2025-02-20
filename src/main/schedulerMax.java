@@ -41,15 +41,6 @@ public class schedulerMax extends Application {
         mainStage.setTitle(rb_languages.getString("loginFormHeader"));
         mainStage.setScene(new Scene(root, 600, 449));
         mainStage.show();
-
-        // FIXME DELETE BEFORE PROJECT SUBMISSION!!!!!!
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MainForm.fxml"));
-        //Parent root = loader.load();
-        //mainStage.setTitle("SchedulerMax");
-        //mainStage.setScene(new Scene(root, 1296, 823));
-        //mainStage.show();
-
-
     }
 
 
@@ -71,10 +62,6 @@ public class schedulerMax extends Application {
 
         // Start the application
         launch(args);
-
-
-
-
     }
 
 
