@@ -28,7 +28,7 @@ Author:
 David Long
 
 Contact Information: 
-The author can be contacted by email through Western Governors University at dlon121@wgu.edu.
+The author can be contacted by email: **********@gmail.com
 
 Version:
 1.2
